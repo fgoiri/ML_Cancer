@@ -41,30 +41,32 @@ Los datos provienen del proyecto **TCGA (The Cancer Genome Atlas)** y contienen 
 
 ## 📁 Estructura del repositorio
 
+## 📁 Estructura del repositorio
+
 ```
 ML_Cancer/
 │
 ├── src/
 │   ├── data/
-│   │   ├── train.csv           # Datos de entrenamiento (expresión génica + etiquetas)
-│   │   └── test.csv            # Datos de test
+│   │   ├── data.csv           # ⚠️ No incluido (ver sección de descarga)
+│   │   └── labels.csv         # ⚠️ No incluido (ver sección de descarga)
 │   │
 │   ├── notebooks/
-│   │   ├── 01_EDA.ipynb        # Análisis exploratorio de datos
-│   │   ├── 02_preprocessing.ipynb  # Limpieza y preprocesamiento
-│   │   └── 03_modeling.ipynb   # Iteraciones y comparativa de modelos
+│   │   └── ML_Cancer.ipynb    # Notebook completo: EDA, preprocesamiento y modelos
 │   │
 │   ├── utils/
-│   │   └── helpers.py          # Funciones auxiliares (preprocesado, visualización, etc.)
+│   │   └── helpers.py         # Funciones auxiliares reutilizables
 │   │
 │   ├── model/
 │   │   ├── production/
 │   │   │   └── logistic_regression_pca.pkl  # ✅ Modelo final en producción
-│   │   ├── svm_model.pkl
-│   │   ├── random_forest_model.pkl
-│   │   └── xgboost_model.pkl
+│   │   ├── svm_rbf.pkl
+│   │   ├── random_forest.pkl
+│   │   ├── logistic_regression.pkl
+│   │   ├── xgboost.pkl
+│   │   └── adaboost.pkl
 │   │
-│   └── memoria.ipynb           # Memoria limpia del proyecto
+│   └── memoria/               # Memoria del proyecto
 │
 └── README.md
 ```
