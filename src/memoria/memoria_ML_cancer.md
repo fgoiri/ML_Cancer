@@ -251,5 +251,5 @@ El proyecto demuestra que es posible clasificar el tipo de cáncer con una **acc
 
 ---
 
-*Proyecto desarrollado en el marco del Bootcamp de Data Science & Machine Learning.*  
+*Proyecto desarrollado en el marco del Bootcamp de Data Science & Machine Learning por Fátima Goiri*  
 *Herramientas utilizadas: Python, scikit-learn, XGBoost, UMAP, pandas, matplotlib, seaborn.*
